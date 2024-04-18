@@ -15,7 +15,7 @@ output_entry = tk.Entry(window)
 input_label = tk.Label(window, text='File to be compressed')
 output_label = tk.Label(window, text='Name of the compressed file')
 
-compress_button = tk.Button(window, text='Compress')
+compress_button = tk.Button(window, text='Compress', command=lambda:compression(input_entry.get(),output_entry.get()))
 
 input_label.grid(row=0,column=0)
 input_entry.grid(row=0,column=1)
